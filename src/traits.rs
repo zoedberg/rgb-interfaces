@@ -53,7 +53,6 @@ pub trait IssuerWrapper {
             ifaces: tiny_bset![Self::FEATURES.iface()],
             schemata: tiny_bset![Self::schema()],
             iimpls: tiny_bset![Self::issue_impl()],
-            supplements: none!(),
             types: Self::types(),
             scripts: Confined::from_iter_checked(Self::scripts().release().into_values()),
             signatures: none!(),

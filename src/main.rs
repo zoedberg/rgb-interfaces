@@ -25,11 +25,8 @@ use std::path::PathBuf;
 use std::str::FromStr;
 use std::{fs, io};
 
-use ifaces::{rgb20, rgb21, rgb25, Rgb20, Rgb21, LNPBP_IDENTITY};
-use rgbstd::containers::{
-    FileContent, Kit, Supplement, SUPPL_ANNOT_IFACE_CLASS, SUPPL_ANNOT_IFACE_FEATURES,
-};
-use rgbstd::info::IfaceClassName;
+use ifaces::{rgb20, rgb21, rgb25, Rgb20, Rgb21};
+use rgbstd::containers::{FileContent, Kit};
 use rgbstd::interface::IfaceClass;
 use rgbstd::stl::{bp_tx_stl, rgb_contract_stl};
 use strict_types::stl::std_stl;
@@ -78,14 +75,6 @@ fn main() -> io::Result<()> {
     for features in rgb20::Rgb20::ENUMERATE {
         let iface = features.iface();
         let types = typesys.extract(iface.types()).unwrap();
-        let mut suppl = Supplement::new(iface.iface_id(), LNPBP_IDENTITY);
-        suppl
-            .annotate_itself(SUPPL_ANNOT_IFACE_CLASS, &IfaceClassName::from("RGB20"))
-            .unwrap();
-        suppl
-            .annotate_itself(SUPPL_ANNOT_IFACE_FEATURES, &features.to_list())
-            .unwrap();
-        kit.supplements.push(suppl).unwrap();
         kit.ifaces.push(iface).unwrap();
         kit.types.extend(types).unwrap();
     }
@@ -96,14 +85,6 @@ fn main() -> io::Result<()> {
     for features in rgb21::Rgb21::ENUMERATE {
         let iface = features.iface();
         let types = typesys.extract(iface.types()).unwrap();
-        let mut suppl = Supplement::new(iface.iface_id(), LNPBP_IDENTITY);
-        suppl
-            .annotate_itself(SUPPL_ANNOT_IFACE_CLASS, &IfaceClassName::from("RGB21"))
-            .unwrap();
-        suppl
-            .annotate_itself(SUPPL_ANNOT_IFACE_FEATURES, &features.to_list())
-            .unwrap();
-        kit.supplements.push(suppl).unwrap();
         kit.ifaces.push(iface).unwrap();
         kit.types.extend(types).unwrap();
     }
@@ -114,14 +95,6 @@ fn main() -> io::Result<()> {
     for features in rgb25::Rgb25::ENUMERATE {
         let iface = features.iface();
         let types = typesys.extract(iface.types()).unwrap();
-        let mut suppl = Supplement::new(iface.iface_id(), LNPBP_IDENTITY);
-        suppl
-            .annotate_itself(SUPPL_ANNOT_IFACE_CLASS, &IfaceClassName::from("RGB25"))
-            .unwrap();
-        suppl
-            .annotate_itself(SUPPL_ANNOT_IFACE_FEATURES, &features.to_list())
-            .unwrap();
-        kit.supplements.push(suppl).unwrap();
         kit.ifaces.push(iface).unwrap();
         kit.types.extend(types).unwrap();
     }
