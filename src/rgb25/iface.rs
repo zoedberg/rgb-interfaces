@@ -42,7 +42,6 @@ pub fn named_contract() -> Iface {
             fname!("terms") => GlobalIface::required(types.get("RGBContract.ContractTerms")),
         },
         assignments: none!(),
-        valencies: none!(),
         genesis: GenesisIface {
             modifier: Modifier::Abstract,
             metadata: none!(),
@@ -54,11 +53,9 @@ pub fn named_contract() -> Iface {
                 fname!("terms") => Occurrences::Once,
             },
             assignments: none!(),
-            valencies: none!(),
             errors: none!(),
         },
         transitions: none!(),
-        extensions: none!(),
         errors: none!(),
         default_operation: None,
     }

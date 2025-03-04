@@ -1,5 +1,5 @@
 @version(1)
-@id(rgb:ifc:Vk9c4$Ny-Fv0J6tg-pDF05CE-312oCWh-fENNuia-GYbEu18#adios-alert-never)
+@id(rgb:ifc:1aUMqotD-eVC8T0G-RF5UaXY-DAJx4ZX-l8CPnBe-D16eoXk#brother-capital-almanac)
 @developer("ssi:LZS1ux-gjD9nXPF-OcetUUkW-6r3uSCS6-aQhs9W5f-8JE7w")
 @timestamp(1711405444)
 interface NamedAsset
@@ -11,7 +11,7 @@ interface NamedAsset
 
 
 @version(1)
-@id(rgb:ifc:VPnE3vly-SyuCUze-soMpdCb-jvSuziU-M!dOCU!-QBt6KVA#pierre-night-plate)
+@id(rgb:ifc:S1mLmQHT-fbgsEZ!-vI9q6G3-9c8UKjb-Jxh8g6R-LA0KwPs#pattern-tango-ticket)
 @developer("ssi:LZS1ux-gjD9nXPF-OcetUUkW-6r3uSCS6-aQhs9W5f-8JE7w")
 @timestamp(1711405444)
 interface RenameableAsset
@@ -29,7 +29,7 @@ interface RenameableAsset
 
 
 @version(1)
-@id(rgb:ifc:13N6PRwT-T68!FGY-lBwX2cm-qesgJ11-j0nQkM1-WSCJFj4#ariel-gizmo-evita)
+@id(rgb:ifc:tGRqYNyx-61Q7zm2-VKnxYLQ-SK9mYoJ-AATMvkv-C$3oS2k#queen-global-suzuki)
 @developer("ssi:LZS1ux-gjD9nXPF-OcetUUkW-6r3uSCS6-aQhs9W5f-8JE7w")
 @timestamp(1711405444)
 interface FungibleAsset
@@ -55,7 +55,7 @@ interface FungibleAsset
 
 
 @version(1)
-@id(rgb:ifc:w3Lk9Mt3-gKt$n5y-TYpVGg0-IDpK0p9-sHQ!hb6-m2Qr3a0#unicorn-reward-ladder)
+@id(rgb:ifc:zuIHOjAi-D0MlrR1-PvzQ7L3-bke4CON-aZHSf0d-g81mdQ4#liberal-exhibit-mister)
 @developer("ssi:LZS1ux-gjD9nXPF-OcetUUkW-6r3uSCS6-aQhs9W5f-8JE7w")
 @timestamp(1711405444)
 interface FixedAsset
@@ -68,7 +68,7 @@ interface FixedAsset
 
 
 @version(1)
-@id(rgb:ifc:vOVfWwQ7-2TDwbAN-36Yrvum-8nAF$lT-vNzw!Zt-7ZmBGR0#ammonia-antonio-norway)
+@id(rgb:ifc:j0gWHR1w-z12qv$Y-Ftdc0HQ-78ynoDF-NbGu$b7-ihY$l40#slalom-house-oberon)
 @developer("ssi:LZS1ux-gjD9nXPF-OcetUUkW-6r3uSCS6-aQhs9W5f-8JE7w")
 @timestamp(1711405444)
 interface BurnableAsset
@@ -94,7 +94,7 @@ interface BurnableAsset
 
 
 @version(1)
-@id(rgb:ifc:0RhF!uRt-geU8$Hc-hvvG6j4-e1wxCwQ-CWBtpfB-gZIIY6s#brazil-olympic-marvin)
+@id(rgb:ifc:88$rx3tA-m!c6u93-vt8OFGe-TrWefIS-8uTFYKG-haZB1zk#hotel-colombo-digital)
 @developer("ssi:LZS1ux-gjD9nXPF-OcetUUkW-6r3uSCS6-aQhs9W5f-8JE7w")
 @timestamp(1711405444)
 interface InflatableAsset
@@ -125,7 +125,7 @@ interface InflatableAsset
 
 
 @version(1)
-@id(rgb:ifc:azoYYtyN-hzAFPrJ-8zqI$HJ-14PRdSK-YrUQL2v-ccJC6Bk#tractor-scorpio-mineral)
+@id(rgb:ifc:xoJA9mWK-!0x0h3l-6XUnex5-JkOxQuB-8ovh9te-!clPnFI#hostel-hello-diesel)
 @developer("ssi:LZS1ux-gjD9nXPF-OcetUUkW-6r3uSCS6-aQhs9W5f-8JE7w")
 @timestamp(1711405444)
 interface ReplaceableAsset
@@ -146,7 +146,7 @@ interface ReplaceableAsset
 
 
 @version(1)
-@id(rgb:ifc:cqaDYTzY-SR6opg8-yAwXW23-QH5ge!v-KJK8kzy-xqGZ4gI#cake-museum-karl)
+@id(rgb:ifc:OWezLvq!-YbDKTh5-7BG7$RO-g1KodW0-XCr8Gsk-MObzR0g#matrix-express-vampire)
 @developer("ssi:LZS1ux-gjD9nXPF-OcetUUkW-6r3uSCS6-aQhs9W5f-8JE7w")
 @timestamp(1711405444)
 interface NonFungibleToken
@@ -179,7 +179,7 @@ interface NonFungibleToken
 
 
 @version(1)
-@id(rgb:ifc:EiusZVYz-zpXSkSo-3c0Tqoc-t!N4Jnr-6$TxTgX-Ur1CFWM#tropic-joel-data)
+@id(rgb:ifc:KbmjihEX-wP!P!0U-qeVbaN3-h4ZT7bx-eAEcm8S-ajqXPf4#balsa-percent-aurora)
 @developer("ssi:LZS1ux-gjD9nXPF-OcetUUkW-6r3uSCS6-aQhs9W5f-8JE7w")
 @timestamp(1711405444)
 interface EngravableNft
@@ -199,7 +199,7 @@ interface EngravableNft
 
 
 @version(1)
-@id(rgb:ifc:gpfNDb9S-qdSEAmR-MH2bn!3-ZQtY$Az-GxASNVG-dVIhFzM#bernard-nikita-detail)
+@id(rgb:ifc:hNZH517K-beRuBKY-!7JGZqA-iey01Nc-Tq3mZsg-GA6XgUE#comrade-cargo-polygon)
 @developer("ssi:LZS1ux-gjD9nXPF-OcetUUkW-6r3uSCS6-aQhs9W5f-8JE7w")
 @timestamp(1711405444)
 interface UniqueNft
@@ -214,7 +214,7 @@ interface UniqueNft
 
 
 @version(1)
-@id(rgb:ifc:L8SvJhId-0E78cOR-LOTR$VO-KhEnHfL-7afNS2K-WCHl4gI#suzuki-solid-dragon)
+@id(rgb:ifc:PFTubMgk-U1NI27G-BgY87eN-fuXpSq9-IW9XTJt-UkgM19I#vista-instant-profile)
 @developer("ssi:LZS1ux-gjD9nXPF-OcetUUkW-6r3uSCS6-aQhs9W5f-8JE7w")
 @timestamp(1711405444)
 interface LimitedNft
@@ -229,7 +229,7 @@ interface LimitedNft
 
 
 @version(1)
-@id(rgb:ifc:to80AGDM-Dmi7SvS-KYgBysc-qVYsjqf-N0sm1ED-ng3KevA#survive-humor-order)
+@id(rgb:ifc:Ij$ksULm-g9q3MHS-bO9L2nl-!BUcooZ-5MtmYlB-XeCEIjg#tibet-prefix-passive)
 @developer("ssi:LZS1ux-gjD9nXPF-OcetUUkW-6r3uSCS6-aQhs9W5f-8JE7w")
 @timestamp(1711405444)
 interface IssuableNft
@@ -251,7 +251,7 @@ interface IssuableNft
 
 
 @version(1)
-@id(rgb:ifc:gvx80qo7-lpHXzWN-fADtFHA-MI6$$fu-VXHTNji-nXo1oWQ#format-oliver-latin)
+@id(rgb:ifc:9mVCnH9E-ClI5!A8-6$vmelr-fb1r6Lv-6SiH3bA-cM4Amds#lazarus-beauty-agenda)
 @developer("ssi:LZS1ux-gjD9nXPF-OcetUUkW-6r3uSCS6-aQhs9W5f-8JE7w")
 @timestamp(1711405444)
 interface NamedContract

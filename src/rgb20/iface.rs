@@ -48,7 +48,6 @@ pub fn named_asset() -> Iface {
             fname!("terms") => GlobalIface::required(types.get("RGBContract.ContractTerms")),
         },
         assignments: none!(),
-        valencies: none!(),
         genesis: GenesisIface {
             modifier: Modifier::Abstract,
             metadata: none!(),
@@ -57,11 +56,9 @@ pub fn named_asset() -> Iface {
                 fname!("terms") => Occurrences::Once,
             },
             assignments: none!(),
-            valencies: none!(),
             errors: none!(),
         },
         transitions: none!(),
-        extensions: none!(),
         errors: none!(),
         default_operation: None,
     }
@@ -79,7 +76,6 @@ pub fn renameable() -> Iface {
         assignments: tiny_bmap! {
             fname!("updateRight") => AssignIface::public(OwnedIface::Rights, Req::Required),
         },
-        valencies: none!(),
         genesis: GenesisIface {
             modifier: Modifier::Override,
             metadata: none!(),
@@ -87,7 +83,6 @@ pub fn renameable() -> Iface {
             assignments: tiny_bmap! {
                 fname!("updateRight") => Occurrences::Once,
             },
-            valencies: none!(),
             errors: none!(),
         },
         transitions: tiny_bmap! {
@@ -104,12 +99,10 @@ pub fn renameable() -> Iface {
                 assignments: tiny_bmap! {
                     fname!("updateRight") => Occurrences::NoneOrOnce,
                 },
-                valencies: none!(),
                 errors: none!(),
                 default_assignment: Some(fname!("updateRight")),
             },
         },
-        extensions: none!(),
         default_operation: None,
         errors: none!(),
     }
@@ -130,7 +123,6 @@ pub fn fungible() -> Iface {
         assignments: tiny_bmap! {
             fname!("assetOwner") => AssignIface::private(OwnedIface::Amount, Req::NoneOrMore),
         },
-        valencies: none!(),
         genesis: GenesisIface {
             modifier: Modifier::Override,
             metadata: none!(),
@@ -140,7 +132,6 @@ pub fn fungible() -> Iface {
             assignments: tiny_bmap! {
                 fname!("assetOwner") => Occurrences::NoneOrMore,
             },
-            valencies: none!(),
             errors: tiny_bset! {
                 vname!("issuedMismatch"),
             },
@@ -157,14 +148,12 @@ pub fn fungible() -> Iface {
                 assignments: tiny_bmap! {
                     fname!("assetOwner") => Occurrences::OnceOrMore,
                 },
-                valencies: none!(),
                 errors: tiny_bset! {
                     vname!("nonEqualAmounts")
                 },
                 default_assignment: Some(fname!("assetOwner")),
             },
         },
-        extensions: none!(),
         errors: tiny_bmap! {
             vname!("issuedMismatch")
                 => tiny_s!("supply specified as a global parameter doesn't match the issued supply allocated to the asset owners"),
@@ -190,13 +179,11 @@ pub fn reservable() -> Iface {
         },
         global_state: none!(),
         assignments: none!(),
-        valencies: none!(),
         genesis: GenesisIface {
             modifier: Modifier::Override,
             metadata: tiny_bset![fname!("reserveProof")],
             globals: none!(),
             assignments: none!(),
-            valencies: none!(),
             errors: tiny_bset! {
                 vname!("invalidProof"),
                 vname!("insufficientReserves")
@@ -210,7 +197,6 @@ pub fn reservable() -> Iface {
                 globals: none!(),
                 inputs: none!(),
                 assignments: none!(),
-                valencies: none!(),
                 errors: tiny_bset! {
                     vname!("invalidReservesProof"),
                     vname!("insufficientReserves")
@@ -218,7 +204,6 @@ pub fn reservable() -> Iface {
                 default_assignment: Some(fname!("assetOwner")),
             },
         },
-        extensions: none!(),
         errors: tiny_bmap! {
             vname!("invalidReservesProof")
                 => tiny_s!("the provided proof of reserves is invalid"),
@@ -243,7 +228,6 @@ pub fn fixed() -> Iface {
         assignments: tiny_bmap! {
             fname!("assetOwner") => AssignIface::private(OwnedIface::Amount, Req::OneOrMore),
         },
-        valencies: none!(),
         genesis: GenesisIface {
             modifier: Modifier::Override,
             metadata: none!(),
@@ -251,13 +235,11 @@ pub fn fixed() -> Iface {
             assignments: tiny_bmap! {
                 fname!("assetOwner") => Occurrences::OnceOrMore,
             },
-            valencies: none!(),
             errors: tiny_bset! {
                 vname!("issuedMismatch"),
             },
         },
         transitions: none!(),
-        extensions: none!(),
         errors: none!(),
         default_operation: None,
     }
@@ -281,7 +263,6 @@ pub fn inflatable() -> Iface {
         assignments: tiny_bmap! {
             fname!("inflationAllowance") => AssignIface::public(OwnedIface::Amount, Req::NoneOrMore),
         },
-        valencies: none!(),
         genesis: GenesisIface {
             modifier: Modifier::Override,
             metadata: none!(),
@@ -291,7 +272,6 @@ pub fn inflatable() -> Iface {
             assignments: tiny_bmap! {
                 fname!("inflationAllowance") => Occurrences::OnceOrMore,
             },
-            valencies: none!(),
             errors: tiny_bset! {
                 vname!("issuedMismatch"),
                 vname!("inflationMismatch"),
@@ -312,7 +292,6 @@ pub fn inflatable() -> Iface {
                     fname!("assetOwner") => Occurrences::NoneOrMore,
                     fname!("inflationAllowance") => Occurrences::NoneOrMore,
                 },
-                valencies: none!(),
                 errors: tiny_bset! {
                     vname!("issuedMismatch"),
                     vname!("inflationExceedsAllowance"),
@@ -320,7 +299,6 @@ pub fn inflatable() -> Iface {
                 default_assignment: Some(fname!("assetOwner")),
             },
         },
-        extensions: none!(),
         default_operation: None,
         errors: tiny_bmap! {
             vname!("inflationMismatch")
@@ -349,7 +327,6 @@ pub fn burnable() -> Iface {
         assignments: tiny_bmap! {
             fname!("burnRight") => AssignIface::public(OwnedIface::Rights, Req::OneOrMore),
         },
-        valencies: none!(),
         genesis: GenesisIface {
             modifier: Modifier::Override,
             metadata: none!(),
@@ -357,7 +334,6 @@ pub fn burnable() -> Iface {
             assignments: tiny_bmap! {
                 fname!("burnRight") => Occurrences::OnceOrMore,
             },
-            valencies: none!(),
             errors: none!(),
         },
         transitions: tiny_bmap! {
@@ -375,14 +351,12 @@ pub fn burnable() -> Iface {
                 assignments: tiny_bmap! {
                     fname!("burnRight") => Occurrences::NoneOrMore,
                 },
-                valencies: none!(),
                 errors: tiny_bset! {
                     vname!("invalidBurnProof")
                 },
                 default_assignment: None,
             },
         },
-        extensions: none!(),
         default_operation: None,
         errors: tiny_bmap! {
             vname!("invalidBurnProof")
@@ -406,7 +380,6 @@ pub fn replaceable() -> Iface {
         assignments: tiny_bmap! {
             fname!("replaceRight") => AssignIface::public(OwnedIface::Rights, Req::OneOrMore),
         },
-        valencies: none!(),
         genesis: GenesisIface {
             modifier: Modifier::Override,
             metadata: none!(),
@@ -414,7 +387,6 @@ pub fn replaceable() -> Iface {
             assignments: tiny_bmap! {
                 fname!("replaceRight") => Occurrences::OnceOrMore,
             },
-            valencies: none!(),
             errors: none!(),
         },
         transitions: tiny_bmap! {
@@ -433,7 +405,6 @@ pub fn replaceable() -> Iface {
                     fname!("assetOwner") => Occurrences::OnceOrMore,
                     fname!("replaceRight") => Occurrences::NoneOrOnce,
                 },
-                valencies: none!(),
                 errors: tiny_bset! {
                     vname!("issuedMismatch"),
                     vname!("invalidBurnProof"),
@@ -441,7 +412,6 @@ pub fn replaceable() -> Iface {
                 default_assignment: Some(fname!("assetOwner")),
             },
         },
-        extensions: none!(),
         default_operation: None,
         errors: none!(),
     }
@@ -467,7 +437,6 @@ pub fn replaceable_epochs() -> Iface {
             fname!("burnEpoch") => AssignIface::public(OwnedIface::Rights, Req::OneOrMore),
             fname!("burnRight") => AssignIface::public(OwnedIface::Rights, Req::NoneOrMore),
         },
-        valencies: none!(),
         genesis: GenesisIface {
             modifier: Modifier::Override,
             metadata: none!(),
@@ -475,7 +444,6 @@ pub fn replaceable_epochs() -> Iface {
             assignments: tiny_bmap! {
                 fname!("burnEpoch") => Occurrences::Once,
             },
-            valencies: none!(),
             errors: none!(),
         },
         transitions: tiny_bmap! {
@@ -491,7 +459,6 @@ pub fn replaceable_epochs() -> Iface {
                     fname!("burnEpoch") => Occurrences::NoneOrOnce,
                     fname!("burnRight") => Occurrences::Once,
                 },
-                valencies: none!(),
                 errors: none!(),
                 default_assignment: Some(fname!("burnRight")),
             },
@@ -508,7 +475,6 @@ pub fn replaceable_epochs() -> Iface {
                 assignments: tiny_bmap! {
                     fname!("burnRight") => Occurrences::NoneOrOnce,
                 },
-                valencies: none!(),
                 errors: tiny_bset! {
                     vname!("issuedMismatch"),
                     vname!("invalidProof"),
@@ -530,7 +496,6 @@ pub fn replaceable_epochs() -> Iface {
                     fname!("assetOwner") => Occurrences::NoneOrMore,
                     fname!("burnRight") => Occurrences::NoneOrOnce,
                 },
-                valencies: none!(),
                 errors: tiny_bset! {
                     vname!("nonEqualAmounts"),
                     vname!("issuedMismatch"),
@@ -540,7 +505,6 @@ pub fn replaceable_epochs() -> Iface {
                 default_assignment: Some(fname!("assetOwner")),
             },
         },
-        extensions: none!(),
         default_operation: None,
         errors: tiny_bmap! {
             vname!("insufficientCoverage")

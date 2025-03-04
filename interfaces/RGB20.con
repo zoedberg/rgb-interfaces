@@ -1,5 +1,5 @@
 @version(1)
-@id(rgb:ifc:naFrAfgG-Kfu$A!c-3L!bC$4-s1LWJQV-4Iv!62u-4B3ab8Y#mailbox-dialog-iron)
+@id(rgb:ifc:ppgM0SEs-!JuGVNE-8yWTxxf-aQKklXh-s8u5dt7-gDyyWBw#smart-hostel-fractal)
 @developer("ssi:LZS1ux-gjD9nXPF-OcetUUkW-6r3uSCS6-aQhs9W5f-8JE7w")
 @timestamp(1711405444)
 interface RGB20Base: NamedAsset, FungibleAsset
@@ -27,7 +27,7 @@ interface RGB20Base: NamedAsset, FungibleAsset
 
 
 @version(1)
-@id(rgb:ifc:1$D4u$R8-gvvRAMs-SAZpZiR-IPGrUMf-6xizoHW-8UtBnJU#arena-ladder-left)
+@id(rgb:ifc:a8sAsuAg-Hy8FBZL-XmGtiwL-2vlUZGS-PMb4JxM-uYKQk9M#slang-remark-consul)
 @developer("ssi:LZS1ux-gjD9nXPF-OcetUUkW-6r3uSCS6-aQhs9W5f-8JE7w")
 @timestamp(1711405444)
 interface RGB20Renamable: NamedAsset, FungibleAsset, RGB20Base, RenameableAsset
@@ -62,7 +62,7 @@ interface RGB20Renamable: NamedAsset, FungibleAsset, RGB20Base, RenameableAsset
 
 
 @version(1)
-@id(rgb:ifc:$iUnO9aO-1xhqUd6-1Jm5S5!-wM3ngby-5GVEylQ-ZTAMYDk#tornado-pioneer-bucket)
+@id(rgb:ifc:mpx1ZasJ-eA7rtXs-SfEdHy4-AbxLyZA-D6l1WIq-NGMqMQ0#portal-native-model)
 @developer("ssi:LZS1ux-gjD9nXPF-OcetUUkW-6r3uSCS6-aQhs9W5f-8JE7w")
 @timestamp(1711405444)
 interface RGB20Fixed: NamedAsset, FungibleAsset, RGB20Base, FixedAsset
@@ -90,7 +90,7 @@ interface RGB20Fixed: NamedAsset, FungibleAsset, RGB20Base, FixedAsset
 
 
 @version(1)
-@id(rgb:ifc:meHrtVTZ-6xAdd0w-rjDttLh-cs2n7zn-sZBzfwz-FcU!i24#jungle-wizard-dollar)
+@id(rgb:ifc:RjZTmbrV-QQbpmCF-7gQVXQ0-T62uZa0-uzZHqfB-ms$Zg6w#comet-private-armor)
 @developer("ssi:LZS1ux-gjD9nXPF-OcetUUkW-6r3uSCS6-aQhs9W5f-8JE7w")
 @timestamp(1711405444)
 interface RGB20RenamableFixed: NamedAsset, FungibleAsset, RGB20Base, RenameableAsset, RGB20Renamable, FixedAsset
@@ -125,7 +125,7 @@ interface RGB20RenamableFixed: NamedAsset, FungibleAsset, RGB20Base, RenameableA
 
 
 @version(1)
-@id(rgb:ifc:YLpmbnY2-yZn$JdG-ghjwoCP-zj215y0-$XuwA90-o$CP$pg#camel-slogan-comrade)
+@id(rgb:ifc:9ocyVPbR-vYdMrNW-$6D1H7f-rDKvs$H-MNfvcX7-eKeKTxY#paint-sting-prince)
 @developer("ssi:LZS1ux-gjD9nXPF-OcetUUkW-6r3uSCS6-aQhs9W5f-8JE7w")
 @timestamp(1711405444)
 interface RGB20Inflatable: NamedAsset, FungibleAsset, RGB20Base, InflatableAsset
@@ -169,7 +169,7 @@ interface RGB20Inflatable: NamedAsset, FungibleAsset, RGB20Base, InflatableAsset
 
 
 @version(1)
-@id(rgb:ifc:yxQRcNJ4-yMnJ0$c-gLjwpdS-8DuJjFn-pWQ4i5C-To2R$U4#basil-gopher-music)
+@id(rgb:ifc:f!A8salU-hKohxKo-c055RKC-oQ8cdBq-mG0M5Mv-uBC1mp4#maximum-kilo-rudolf)
 @developer("ssi:LZS1ux-gjD9nXPF-OcetUUkW-6r3uSCS6-aQhs9W5f-8JE7w")
 @timestamp(1711405444)
 interface RGB20Burnable: NamedAsset, FungibleAsset, RGB20Base, BurnableAsset
@@ -211,7 +211,7 @@ interface RGB20Burnable: NamedAsset, FungibleAsset, RGB20Base, BurnableAsset
 
 
 @version(1)
-@id(rgb:ifc:BWy2H0Nd-ykgandr-mR5fydi-U$7tFU2-R!z1F9B-MZW0tKo#bishop-poem-dublin)
+@id(rgb:ifc:OhTWrZQ1-weAQcc$-fBxUlC6-eMc$L29-0FgBLY4-bFTc7LM#order-monica-cello)
 @developer("ssi:LZS1ux-gjD9nXPF-OcetUUkW-6r3uSCS6-aQhs9W5f-8JE7w")
 @timestamp(1711405444)
 interface RGB20InflatableBurnable: NamedAsset, FungibleAsset, RGB20Base, InflatableAsset, RGB20Inflatable, BurnableAsset
@@ -268,7 +268,7 @@ interface RGB20InflatableBurnable: NamedAsset, FungibleAsset, RGB20Base, Inflata
 
 
 @version(1)
-@id(rgb:ifc:w0Z1Za2j-klpfWyT-4coOB!6-90qakW5-AfjmIc9-ejZbKZU#cycle-buzzer-british)
+@id(rgb:ifc:ZQ3CrgkO-!3pN5Ql-0aIWLa8-N53pPyK-NPoHhAt-GqqfHEE#panda-random-domain)
 @developer("ssi:LZS1ux-gjD9nXPF-OcetUUkW-6r3uSCS6-aQhs9W5f-8JE7w")
 @timestamp(1711405444)
 interface RGB20Replaceable: NamedAsset, FungibleAsset, RGB20Base, InflatableAsset, RGB20Inflatable, BurnableAsset, RGB20InflatableBurnable, ReplaceableAsset
@@ -335,7 +335,7 @@ interface RGB20Replaceable: NamedAsset, FungibleAsset, RGB20Base, InflatableAsse
 
 
 @version(1)
-@id(rgb:ifc:Gzd3DwVy-TtF3Z6V-h981qjU-WV9QmbS-$SB5Tyg-6y5PLPc#battery-consul-mercury)
+@id(rgb:ifc:qyO7BJi6-cAEYORK-kUiZHBg-Kx2kGeW-MoEsUg7-xVnrwi0#cadet-slang-little)
 @developer("ssi:LZS1ux-gjD9nXPF-OcetUUkW-6r3uSCS6-aQhs9W5f-8JE7w")
 @timestamp(1711405444)
 interface RGB20RenamableInflatable: NamedAsset, FungibleAsset, RGB20Base, RenameableAsset, RGB20Renamable, InflatableAsset
@@ -386,7 +386,7 @@ interface RGB20RenamableInflatable: NamedAsset, FungibleAsset, RGB20Base, Rename
 
 
 @version(1)
-@id(rgb:ifc:FFfPPWDH-4$BWBn7-3QnE8WV-nHj98E8-IoAIZvt-4kiX7YA#theory-memo-puzzle)
+@id(rgb:ifc:fNA6xrws-yRhg753-w3rmmmx-bIDP5Ww-fBh8VaN-nD9snN8#campus-nectar-uniform)
 @developer("ssi:LZS1ux-gjD9nXPF-OcetUUkW-6r3uSCS6-aQhs9W5f-8JE7w")
 @timestamp(1711405444)
 interface RGB20RenamableBurnable: NamedAsset, FungibleAsset, RGB20Base, RenameableAsset, RGB20Renamable, BurnableAsset
@@ -435,7 +435,7 @@ interface RGB20RenamableBurnable: NamedAsset, FungibleAsset, RGB20Base, Renameab
 
 
 @version(1)
-@id(rgb:ifc:MkSuvvz2-StGzuV8-Hewq0fo-hMigWm$-UMxXtdP-RCnZyec#asia-domino-respect)
+@id(rgb:ifc:r1VKOJ8f-v1g6mJI-psiecud-91qng$2-FFo2bld-hihDXeI#grace-arcade-alibi)
 @developer("ssi:LZS1ux-gjD9nXPF-OcetUUkW-6r3uSCS6-aQhs9W5f-8JE7w")
 @timestamp(1711405444)
 interface RGB20RenamableInflatableBurnable: NamedAsset, FungibleAsset, RGB20Base, RenameableAsset, RGB20Renamable, InflatableAsset, RGB20RenamableInflatable, BurnableAsset
@@ -499,7 +499,7 @@ interface RGB20RenamableInflatableBurnable: NamedAsset, FungibleAsset, RGB20Base
 
 
 @version(1)
-@id(rgb:ifc:r6$dLeVy-H0HQpUy-F2XbX2E-P2JqbHp-wsISD4f-xUEaOKQ#postage-plaza-almond)
+@id(rgb:ifc:$HZ8qvkt-pP7MItc-jUQvp9u-0zwydJ4-iNGKU7z-mkgr2YU#vincent-cobalt-dance)
 @developer("ssi:LZS1ux-gjD9nXPF-OcetUUkW-6r3uSCS6-aQhs9W5f-8JE7w")
 @timestamp(1711405444)
 interface RGB20RenamableReplaceable: NamedAsset, FungibleAsset, RGB20Base, RenameableAsset, RGB20Renamable, InflatableAsset, RGB20RenamableInflatable, BurnableAsset, RGB20RenamableInflatableBurnable, ReplaceableAsset

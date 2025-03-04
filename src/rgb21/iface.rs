@@ -45,7 +45,6 @@ pub fn nft() -> Iface {
         assignments: tiny_bmap! {
             fname!("assetOwner") => AssignIface::private(OwnedIface::Data(types.get("RGBContract.Allocation")), Req::NoneOrMore),
         },
-        valencies: none!(),
         genesis: GenesisIface {
             modifier: Modifier::Override,
             metadata: none!(),
@@ -56,7 +55,6 @@ pub fn nft() -> Iface {
             assignments: tiny_bmap! {
                 fname!("assetOwner") => Occurrences::NoneOrMore,
             },
-            valencies: none!(),
             errors: tiny_bset! {
                 vname!("unknownToken"),
                 vname!("fractionOverflow"),
@@ -75,7 +73,6 @@ pub fn nft() -> Iface {
                 assignments: tiny_bmap! {
                     fname!("assetOwner") => Occurrences::OnceOrMore,
                 },
-                valencies: none!(),
                 errors: tiny_bset! {
                 vname!("unknownToken"),
                     vname!("nonEqualValues"),
@@ -85,7 +82,6 @@ pub fn nft() -> Iface {
                 default_assignment: Some(fname!("assetOwner")),
             },
         },
-        extensions: none!(),
         errors: tiny_bmap! {
             vname!("fractionOverflow")
                 => tiny_s!("the amount of token fractions in outputs exceeds 1"),
@@ -122,7 +118,6 @@ pub fn unique() -> Iface {
         assignments: tiny_bmap! {
             fname!("assetOwner") => AssignIface::private(OwnedIface::Data(types.get("RGBContract.Allocation")), Req::OneOrMore),
         },
-        valencies: none!(),
         genesis: GenesisIface {
             modifier: Modifier::Override,
             metadata: none!(),
@@ -133,11 +128,9 @@ pub fn unique() -> Iface {
             assignments: tiny_bmap! {
                 fname!("assetOwner") => Occurrences::OnceOrMore,
             },
-            valencies: none!(),
             errors: none!(),
         },
         transitions: none!(),
-        extensions: none!(),
         errors: none!(),
         default_operation: None,
     }
@@ -159,7 +152,6 @@ pub fn limited() -> Iface {
         assignments: tiny_bmap! {
             fname!("assetOwner") => AssignIface::private(OwnedIface::Data(types.get("RGBContract.Allocation")), Req::OneOrMore),
         },
-        valencies: none!(),
         genesis: GenesisIface {
             modifier: Modifier::Override,
             metadata: none!(),
@@ -170,11 +162,9 @@ pub fn limited() -> Iface {
             assignments: tiny_bmap! {
                 fname!("assetOwner") => Occurrences::OnceOrMore,
             },
-            valencies: none!(),
             errors: none!(),
         },
         transitions: none!(),
-        extensions: none!(),
         errors: none!(),
         default_operation: None,
     }
@@ -193,13 +183,11 @@ pub fn engravable() -> Iface {
             fname!("engravings") => GlobalIface::none_or_many(types.get("RGB21.EngravingData")),
         },
         assignments: none!(),
-        valencies: none!(),
         genesis: GenesisIface {
             modifier: Modifier::Override,
             metadata: none!(),
             globals: none!(),
             assignments: none!(),
-            valencies: none!(),
             errors: none!(),
         },
         transitions: tiny_bmap! {
@@ -216,7 +204,6 @@ pub fn engravable() -> Iface {
                 assignments: tiny_bmap! {
                     fname!("assetOwner") => Occurrences::OnceOrMore,
                 },
-                valencies: none!(),
                 errors: tiny_bset! {
                     vname!("unknownToken"),
                     vname!("nonEqualValues"),
@@ -227,7 +214,6 @@ pub fn engravable() -> Iface {
                 default_assignment: Some(fname!("assetOwner")),
             },
         },
-        extensions: none!(),
         errors: tiny_bmap! {
             vname!("nonEngravableToken")
                 => tiny_s!("attempt to engrave on a token which prohibit engraving"),
@@ -249,7 +235,6 @@ pub fn issuable() -> Iface {
         assignments: tiny_bmap! {
             fname!("inflationAllowance") => AssignIface::public(OwnedIface::Data(types.get("RGB21.ItemsCount")), Req::OneOrMore),
         },
-        valencies: none!(),
         genesis: GenesisIface {
             modifier: Modifier::Override,
             metadata: none!(),
@@ -257,7 +242,6 @@ pub fn issuable() -> Iface {
             assignments: tiny_bmap! {
                 fname!("inflationAllowance") => Occurrences::OnceOrMore,
             },
-            valencies: none!(),
             errors: none!(),
         },
         transitions: tiny_bmap! {
@@ -276,7 +260,6 @@ pub fn issuable() -> Iface {
                     fname!("assetOwner") => Occurrences::NoneOrMore,
                     fname!("inflationAllowance") => Occurrences::NoneOrMore,
                 },
-                valencies: none!(),
                 errors: tiny_bset! {
                     vname!("unknownToken"),
                     vname!("fractionOverflow"),
@@ -286,7 +269,6 @@ pub fn issuable() -> Iface {
                 default_assignment: Some(fname!("assetOwner")),
             },
         },
-        extensions: none!(),
         errors: tiny_bmap! {
             vname!("issueExceedsAllowance")
                 => tiny_s!("you try to issue more assets than allowed by the contract terms"),
